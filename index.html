@@ -43,16 +43,29 @@
       main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        width: 1200px;
+        max-width: 1440px;
+        margin: 100px auto;
         gap: 30px;
-        margin-inline: auto;
-        position: absolute;
+        /* margin-inline: auto; */
+
+        /* position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
       }
       p {
         color: var(--lightgray);
+
+        /* opacity: 50%; */
+      }
+
+      .daniel,
+      .jeanette,
+      .jonathan,
+      .patrick,
+      .kira {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 10px;
       }
 
       .paragraph,
@@ -65,6 +78,9 @@
         padding: 30px;
         color: var(--white);
         background-color: var(--violet);
+        background-image: url("./images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: top 10px right 100px;
       }
       .jonathan {
         border-radius: 10px;
@@ -145,9 +161,6 @@
           align-items: center;
           justify-content: center;
           border: 1px solid blue;
-        }
-
-        body {
         }
       }
     </style>
