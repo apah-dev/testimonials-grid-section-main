@@ -38,6 +38,7 @@
       body {
         background-color: var(--grayishblue);
         font-family: "Barlow Semi Condensed", sans-serif;
+        margin: auto 100px;
       }
 
       main {
@@ -47,11 +48,6 @@
         margin: 100px auto;
         gap: 30px;
         /* margin-inline: auto; */
-
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
       }
       p {
         color: var(--lightgray);
@@ -144,24 +140,61 @@
       .attribution {
         font-size: 11px;
         text-align: center;
-        position: absolute;
+        /* position: absolute;
         top: 100%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
+        body {
+          margin: 0;
+        }
         main {
           display: flex;
-          width: 300px;
+          width: 100%;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           border: 1px solid blue;
         }
+
+        /* @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+          width: 100%;
+        }
+
+        .patrick {
+          grid-column: 1/4;
+          grid-row: 4/5;
+          border-radius: 10px;
+          padding: 30px;
+          background-color: var(--blue);
+          color: var(--white);
+        }
+
+        .daniel {
+          border-radius: 10px;
+          grid-column: 1/2;
+          padding: 30px;
+          color: var(--white);
+          background-color: var(--violet);
+          background-image: url("./images/bg-pattern-quotation.svg");
+          background-repeat: no-repeat;
+          background-position: top 10px right 100px;
+        }
+
+        .kira {
+          grid-column: 1;
+          grid-row: 5/6;
+          padding: 30px;
+          background-color: var(--white);
+          border-radius: 10px;
+        } */
       }
     </style>
   </head>
